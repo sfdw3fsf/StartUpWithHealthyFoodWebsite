@@ -1,0 +1,129 @@
+/*
+      --01 WHITE SPACING (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  
+      --02 TYPOGRAPHY SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      Font-weight: 400 (default)
+      Line-height: 1(default)
+          
+      --03 COLOR
+
+      -Primary color :#e67e22
+      -Tints:#fdf2e9
+      -Shades:
+      -Accent:
+      -Grey:#555
+
+      --BORDER-RADIUS
+
+      --SHADOW
+
+      */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+.hero-img {
+  width: 100%;
+}
+.hero-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  display: inline-block;
+  font-weight: 600;
+  /* transition: all 1s; */
+  transition: background-color 0.3s;
+}
+.margin-right-sm {
+  margin-right: 1.6rem !important
+  ;
+}
+.btn--start:link,
+.btn--start:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn--start:hover,
+.btn--start:active {
+  background-color: #cf711f;
+}
+.btn--learn:link,
+.btn--learn:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn--learn:hover,
+.btn--learn:active {
+  /* Trick to add border insinde */
+  box-shadow: inset 0 0 0 3px #fff;
+  background-color: #fdf2e9;
+}
+.delivered-meals {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+.delivered-meals p {
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 600;
+}
+.delivered-meals span {
+  color: #cf711f;
+  font-weight: 700;
+}
